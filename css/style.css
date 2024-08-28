@@ -1,8 +1,18 @@
 /* Ini CSS */
+body{
+    margin:0px;
+    background-color: #C9DABF;
+}
+
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 6px;
+    background-color: #808D7C;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo-icon{
@@ -14,7 +24,7 @@ nav{
 }
 
 .nav-item{
-    border: 1px solid;
+    /* border: 1px solid; */
     color: black;
     text-decoration: none;
     font-size: 16px;
@@ -24,35 +34,276 @@ nav{
 }
 
 .nav-container{
-    display: flex
-}
-
-.banner-img{
-    height: 300px;
-    background-image: url(https://picsum.photos/200);
-    background-size: cover;
-    background-position: center;
-}
-
-.profile-item{
-    height: 100px;
-    text-align: -webkit-center;
-}
-
-.profile-img{
-    height: 50px;
-    background-image: url(https://picsum.photos/200);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    width: 50px;
-}
-
-.profile-container{
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
+}
+
+.bgBanner{
+    width:100%;
+    height: 500px;
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    height: 500px;
+}
+
+.welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0px;
+}
+
+.welcome h1{
+    font-family: 'Open Sans';
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+    margin: 0px;
+}
+
+.i-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+.ganti-nama {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center
+}
+
+.ubah {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+  
+.ubah:hover {
+    background-color: #0056b3;
+}
+
+.facility-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.facility-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 20px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+  
+.facility-img {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://picsum.photos/200);
+}
+  
+.facility-item h2 {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.v-misi-container{
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap:10%;
+}
+
+.vm-item{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+.vm-item > .teks-visi, .vm-item > .teks-misi{
+    padding: 5px 24.5px 20px 25px;
+}
+
+.title {
+    background-color: #9CA986;
+    color: white;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section h1{
+    margin: 0 auto;
+    padding: 30px;
+    padding-left: 100px;
+    font-family: 'Orelega One';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.about-container{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 24.5px 20px 25px;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.teks-sjrh, .teks-misi, .teks-visi{
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    color: var(--tertiary-color, #3A4E50);
+}
+
+.messageUs-container{
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+    gap: 5%;
+    
+}
+
+.message-container{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    padding: 20px 24.5px 20px 25px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.teks-msg{
+    text-align: justify;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    color: var(--tertiary-color, #3A4E50);
+}
+
+.form table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    color: var(--tertiary-color, #3A4E50);
+}
+  
+.form table, th, td {
+    border: 1px solid black;
+    padding: 0;
+}
+  
+.form table td {
+    text-align: left;
+}
+  
+.form table input[type="text"],
+.form table input[type="email"],
+.form table input[type="date"],
+.form table textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+  
+.form table input[type="radio"] {
+    margin-right: 5px;
+}
+  
+.form table button[type="submit"] {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.form table button[type="submit"]:hover {
+    background-color: #45a049; /* Hijau lebih gelap */
+}
+
+.tampilan, .form{
+    width: 70%;
+}
+
+p{
+    margin:0px;
+}
+
+footer{
+    background-color: #5F6F65;
+    padding: 10px;
 }
 
 footer > p{
-    text-align: end;
+    text-align: right;
+    font-size: 12px;
 }
