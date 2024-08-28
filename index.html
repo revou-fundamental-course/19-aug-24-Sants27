@@ -1,70 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Orelega One' rel='stylesheet'>
+  </head>
+  <body>
     <!-- Header/ Navbar -->
     <nav>
-        <header>
-            <div class="logo-icon">
-
-            </div>
-        </header>
-        <section class="nav-container">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#our-profile" class="nav-item">Our Profile</a>
-            <a href="#" class="nav-item">Achievement</a>
-            <a href="#" class="nav-item">Message Us</a>
-        </section>
+      <header id="home">
+          <div class="logo-icon"></div>
+      </header>
+      <section class="nav-container">
+          <a href="#home-banner" class="nav-item">Home</a>
+          <a href="#our-profile" class="nav-item">Our Profile</a>
+          <a href="#visi-misi" class="nav-item">Visi & Misi</a>
+          <a href="#our-facility" class="nav-item">Our Facility</a>
+          <a href="#message-us" class="nav-item">Message Us</a>
+      </section>
     </nav>
-    <hr>
     <!-- Content -->
     <main>
-        <article>
-            <header>
-                <h1>Welcome user, to our website</h1>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-            <div class="banner-img"></div>
-        </article>
-        <hr>
-        <section id="our-profile">
-            <header>
-                <h1>Our Profile</h1>
-            </header>
-            <section class="profile-container">
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Sofware Engineer</h2>
-                </div>
-
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Sofware Engineer</h2>
-                </div>
-
-                <div class="profile-item">
-                    <div class="profile-img"></div>
-                    <h2>Sofware Engineer</h2>
-                </div>
-            </section>
-        </section>
-        <section>
-            <form>
-
-            </form>
-            <div>
-
+      <article>
+        <div class="bgBanner">
+          <div class="sliders">
+            <div class="slider">
+              <img src="img\banner-1.jpg" class="img-slideshow" alt="1">
             </div>
+            <div class="slider">
+              <img src="img\banner-2.jpg" class="img-slideshow" alt="2">
+            </div>
+            <div class="slider">
+              <img src="img\banner-3.jpeg" class="img-slideshow" alt="3">
+            </div>
+            <div class="slider">
+              <img src="img\banner-4.jpeg" class="img-slideshow" alt="4">
+            </div>
+          </div>
+          <div class="welcome">
+            <h1>Hi <span id="name">-</span><br>Welcome To Our School Website!</h1><br>
+            <div class="i-container">
+              <input type="text" id="name-input" class="ganti-nama" placeholder="Masukkan nama Anda">
+              <button id="submit" type="submit" class="ubah">Ubah Nama</button>
+              <p id="error-name"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section id="our-profile">
+        <header>
+          <h1>Our Profile</h1>
+        </header>
+
+        <section class="about-container">
+          <span class="teks-sjrh">
+            Berangkat dari keinginan membuka sekolah berkarakter katolik di daerah Bandung selatan yang berkualitas 
+            untuk putra-putra warga Bandung selatan maka dibentuklah Sekolah Talenta.<br><br>
+
+            Sekolah ini mengemban misi membangun lembaga pendidikan yang dapat dinikmati warga Bandung selatan khususnya 
+            dan kota Bandung pada umumnya. Sekolah Talenta adalah sekolah nasional yang berwawasan Internasional dengan 
+            jumlah siswa 1700 siswa saat ini yang kapasitas kedepannya akan mencapai 2000 siswa lebih.<br><br>
+
+            Sekolah ini terdiri dari Toddler, kelompok bermain, Taman Kakak-kanak, Sekolah Dasar,Sekolah Menengah Pertama 
+            dan Sekolah Menengah Atas Sekolah tersebut didirikan oleh Yayasan Marga Asah Talenta tahun 2006 dan berlokasi 
+            di kawasan perumahan Taman Kopo Indah III Blok F.1 Kabupaten Bandung, Jawa Barat.<br><br>
+
+            Pendidikan di Sekolah Talenta dirancang untuk mengembangkan siswa-siswi sesuai talenta yang dimilikinya serta 
+            memiliki landasaan belajar yang kuat, kreatif, inovatif yang disertai rasa tanggung jawab bagi bangsa dan negara. 
+            Sekolah talenta sangat mengembangkan dalam hal nilai-nilai budi pekerti, disiplin, pengetahuan dan kecakapan untuk 
+            mempersiapkan siswa yang berprestasi dalam bidang akademik maupun non akademik serta menjadi pribadi yang unggul 
+            dengan karya besar bagi lingkungannya dengan tetap memperhatikan dan hormat pada keaneka ragaman budaya di dunia ini.<br><br>
+
+            Sekolah talenta menerapkan kurikulum nasional K13, Kurikulum Tingkat Satuan Pendidikan, 2013 yang dikembangkan 
+            dan dikemas dalam proses transfernya dengan pembelajaran yang dinamis, kreatif, atraktif dan inovatif.
+          </span>
         </section>
+      </section>
+
+      <section id="visi-misi">
+        <header>
+            <h1>VISI &amp; MISI</h1>
+        </header>
+        <section class="v-misi-container">
+          <div class="vm-item">
+            <div class="title">Visi</div>
+            <span class="teks-visi">
+              Insan pembelajar yang cerdas dan berbudipekerti.
+            </span>
+          </div>
+          <div class="vm-item">
+            <div class="title">Misi</div>
+            <span class="teks-misi">
+              Mengembangkan pendidikan yang visioner berdasarkan nilai-nilai kristiani dan nilai-nilai kemanusiaan universal.<br><br>
+              Membentuk pribadi yang utuh yang memperjuangkan dan mengembangkan martabat manusia.
+            </span>
+          </div>
+        </section>
+      </section>
+
+      <section id="our-facility">
+        <header>
+          <h1>Our Facility</h1>
+        </header>
+
+        <section class="facility-container">
+          <div class="facility-item">
+            <div class="facility-img"></div>
+            <h2>Area Parkir</h2>
+          </div>
+
+          <div class="facility-item">
+            <div class="facility-img"></div>
+            <h2>Kantin</h2>
+          </div>
+
+          <div class="facility-item">
+            <div class="facility-img"></div>
+            <h2>Lapangan</h2>
+          </div>
+
+          <div class="facility-item">
+            <div class="facility-img"></div>
+            <h2>Ruang Kelas</h2>
+          </div>
+        </section>
+      </section>
+      
+      <section id="message-us">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+        <section class="messageUs-container">
+          <form class="form">
+            <table class="tb-input">
+              <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td colspan="2"><input type="text" id="iname" name="nama" required></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td colspan="2"><input type="email" id="iemail" name="email" required></td>
+              </tr>
+              <tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td colspan="2"><input type="date" id="idate" name="tgl-lahir" required></td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="jk" value="laki-laki" required>Laki-Laki</td>
+                <td><input type="radio" name="jk" value="perempuan" required>Perempuan</td>
+              </tr>
+              <tr>
+                <td>Pesan</td>
+                <td>:</td>
+                <td colspan="2"><textarea id="ipesan" name="pesan" rows="4" cols="30"></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="4"><button type="submit" id="kirim" name="kirim">Submit</button></td>
+              </tr>
+            </table>
+          </form>
+          <div class="tampilan">
+            <section class="message-container">
+              <span class="teks-msg">
+                <table class="tb-output">
+                  <tr>
+                    <td>Current Time</td>
+                    <td>:</td>
+                    <td><span id="display-time"></span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><span id="onama"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><span id="oemail"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><span id="odate"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><span id="ogender"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><span id="opesan"></span></td>
+                  </tr>
+                </table>
+              </span>
+            </section>
+          </div>
+        </section>
+      </section>
+      <br><br>
     </main>
     <!-- Footer -->
     <footer>
-        <p>Made by Varrel</p>
+        <p>Copyright © Varrel Santoso</p>
     </footer>
+    <script src="js\script.js"></script>
 </body>
 </html>
