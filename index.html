@@ -7,20 +7,35 @@
     <link rel="stylesheet" href="css\style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Orelega One' rel='stylesheet'>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-    <!-- Header/ Navbar -->
     <nav>
       <header>
-          <div class="logo-icon"></div>
+        <div class="logo-icon">
+          <img src="asset-pic\talenta_logo.png" alt="logo">
+        </div>
       </header>
-      <section class="nav-container">
-          <a href="#home" class="nav-item">Home</a>
-          <a href="#our-profile" class="nav-item">Our Profile</a>
-          <a href="#visi-misi" class="nav-item">Visi & Misi</a>
-          <a href="#our-facility" class="nav-item">Our Facility</a>
-          <a href="#message-us" class="nav-item">Message Us</a>
-      </section>
+      <div id="menu-icon" class="menu-icon">
+        <i class="ph ph-list"></i>
+      </div>
+      <ul id="menu-list" class="hidden">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#our-profile">Our Profile</a>
+        </li>
+        <li>
+          <a href="#visi-misi">Visi & Misi</a>
+        </li>
+        <li>
+          <a href="#our-facility">Our Facility</a>
+        </li>
+        <li>
+          <a href="#message-us">Message Us</a>
+        </li>
+      </ul>
     </nav>
     <!-- Content -->
     <main>
@@ -28,20 +43,20 @@
         <div class="bgBanner">
           <div class="sliders">
             <div class="slider">
-              <img src="https://picsum.photos/200/300" class="img-slideshow" alt="1">
+              <img src="asset-pic\banner\banner-1.jpeg" class="img-slideshow" alt="1">
             </div>
             <div class="slider">
-              <img src="https://picsum.photos/300/300" class="img-slideshow" alt="2">
+              <img src="asset-pic\banner\banner-2.jpg" class="img-slideshow" alt="2">
             </div>
             <div class="slider">
-              <img src="https://picsum.photos/400/300" class="img-slideshow" alt="3">
+              <img src="asset-pic\banner\banner-3.jpg" class="img-slideshow" alt="3">
             </div>
             <div class="slider">
-              <img src="https://picsum.photos/500/300" class="img-slideshow" alt="4">
+              <img src="asset-pic\banner\banner-4.jpg" class="img-slideshow" alt="4">
             </div>
           </div>
           <div class="welcome">
-            <h1>Hi <span id="name">-</span><br>Welcome To Our School Website!</h1><br>
+            <h1>Hi <span id="name">-</span><br>Welcome To Our School Website!</h1>
             <div class="i-container">
               <input type="text" id="name-input" class="ganti-nama" placeholder="Masukkan nama Anda">
               <button id="submit" type="submit" class="ubah">Ubah Nama</button>
@@ -106,30 +121,41 @@
         <header>
           <h1>Our Facility</h1>
         </header>
-
         <section class="facility-container">
-          <div class="facility-item">
-            <div class="facility-img"></div>
-            <h2>Area Parkir</h2>
-          </div>
+          <div class="row">
+            <div class="facility-item">
+              <div class="facility-img" id="parkir">
+                <img src="asset-pic\facility\parkir.jpeg" alt="">
+              </div>
+              <h2>Area Parkir</h2>
+            </div>
 
-          <div class="facility-item">
-            <div class="facility-img"></div>
-            <h2>Kantin</h2>
+            <div class="facility-item">
+              <div class="facility-img" id="kantin">
+                <img src="asset-pic\facility\kantin.jpeg" alt="">
+              </div>
+              <h2>Kantin</h2>
+            </div>
           </div>
+          
+          <div class="row">
+            <div class="facility-item">
+              <div class="facility-img" id="lapang">
+                <img src="asset-pic/facility/lapang.jpeg" alt="">
+              </div>
+              <h2>Lapangan</h2>
+            </div>
 
-          <div class="facility-item">
-            <div class="facility-img"></div>
-            <h2>Lapangan</h2>
-          </div>
-
-          <div class="facility-item">
-            <div class="facility-img"></div>
-            <h2>Ruang Kelas</h2>
+            <div class="facility-item">
+              <div class="facility-img" id="kelas">
+                <img src="asset-pic/facility/kelas.jpeg" alt="">
+              </div>
+              <h2>Ruang Kelas</h2>
+            </div>
           </div>
         </section>
       </section>
-      
+
       <section id="message-us">
         <header>
           <h1>Message Us</h1>
