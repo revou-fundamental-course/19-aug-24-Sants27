@@ -5,15 +5,51 @@ body{
 }
 
 nav{
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 6px;
     background-color: #808D7C;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;;
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav div img{
+    width: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover{
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+
+nav ul li:last-of-type{
+    padding-right: 20px;
+}
+
+.menu-icon{
+    font-size: 24px;
+    display: none;
 }
 
 section > header {
@@ -27,23 +63,9 @@ main section {
 .logo-icon{
     height: 48px;
     width: 48px;
-    background-image: url(https://picsum.photos/200);
     background-size: cover;
     border-radius: 50%;
-}
-
-.nav-item{
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 8px;
-}
-
-.nav-container{
-    display: flex;
-    gap: 30px;
+    overflow: hidden;
 }
 
 .bgBanner{
@@ -112,20 +134,29 @@ main section {
 
 .facility-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
     width: 80%;
-    max-width: 1200px;
+    justify-content: center;
+    gap: 2.5%;
     margin: 0 auto;
     padding: 0px;
     box-sizing: border-box;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    width: 50%;
+}
+
+
 .facility-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(25% - 20px);
+    width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -138,9 +169,14 @@ main section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(https://picsum.photos/200);
+    /* background-image: url(https://picsum.photos/200); */
 }
-  
+
+.facility-img > img{
+    width: 100%;
+    height: 200px;
+}
+
 .facility-item h2 {
     overflow-wrap: break-word;
     font-family: 'Open Sans';
@@ -188,19 +224,18 @@ main section {
 section h1{
     margin: 0 auto;
     padding: 30px;
-    padding-left: 100px;
     font-family: 'Orelega One';
     font-weight: 400;
     font-size: 40px;
     letter-spacing: 0.2px;
     color: #000000;
+    text-align: center;
 }
 
 .about-container{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     background: #FFFFFF;
-    position: relative;
     margin: 0 auto;
     display: flex;
     padding: 20px 24.5px 20px 25px;
@@ -227,7 +262,6 @@ section h1{
     width: 80%;
     justify-content: space-between;
     gap: 5%;
-    
 }
 
 .message-container{
@@ -318,4 +352,134 @@ footer > p{
     text-align: right;
     font-size: 12px;
     color: #fff;
+}
+
+
+/* @media only screen and (max-width:455px){
+
+} */
+
+@media only screen and (max-width: 600px){
+    main{
+        padding-top: 3.75rem;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.hidden{
+        display: none;
+    }
+
+    nav ul li:last-of-type{
+        padding-bottom: 8px;
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .welcome h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+      }
+    
+    .bgBanner{
+        width:100%;
+        height: 300px;
+    }
+
+    .welcome h1{
+        font-size: 30px;
+    }
+    
+    .welcome{
+        width: 100%;
+        height: 300px;
+    }
+    .i-container {
+        width: 200px;
+    }
+      
+    .ganti-nama, .ubah {
+        font-size: 12px;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    section h1{
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .v-misi-container{
+        flex-direction: column;
+    }
+
+    .vm-item{
+        width: 100%;
+    }
+
+    .vm-item:last-of-type{
+        margin-top: 20px;
+    }
+
+    .facility-container {
+        display: flex;
+        flex-direction: column;
+      }
+      
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5%;
+        width: 100%;
+    }
+
+    .row:last-of-type{
+        margin-top:20px;
+    }
+      
+    .facility-item {
+        width: 100%;
+        height: fit-content;
+    }
+      
+    .facility-img {
+        width: 100%;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+      
+    .facility-item h2 {
+        font-size: 18px;
+    }
+
+    .messageUs-container{
+        flex-direction: column;
+    }
+    .tampilan, .form{
+        width: 100%;
+    }
+
+    .tampilan{
+        margin-top: 10px;
+    }
 }
