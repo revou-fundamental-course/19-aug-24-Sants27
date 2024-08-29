@@ -22,7 +22,7 @@ function showDivs(n){
 
 setInterval(() => {
     plusDivs(1)
-},1000)
+},3000)
 
 let nameInput = document.getElementById('name-input');
 
@@ -37,25 +37,12 @@ document.getElementById('submit').addEventListener("click", function(){
     document.getElementById("name").innerHTML = nama
 })
 
-// let namaInput = document.getElementById('fname');
-// let emailInput = document.getElementById('femail');
-// let tglInput = document.getElementById('fdate');
-// // let genderInput = document.querySelector('input[name="jk"]:checked');
-// let pesanInput = document.getElementById('fpesan');
+const menuIcon = document.getElementById('menu-icon');
+const menuList = document.getElementById('menu-list');
 
-// document.getElementById('fsubmit').addEventListener("click", function(){
-//     const formNamaDisplay = nameInput.value;
-//     const formEmailDisplay = emailInput.value;
-//     const formTglDisplay = tglInput.value;
-//     // const formGenderDisplay = genderInput ? genderInput.value : 'Not Selected';
-//     const formPesanDisplay = pesanInput.value;
-
-//     document.getElementById('display-nama').innerHTML = formNamaDisplay
-//     document.getElementById('display-email').innerHTML = formEmailDisplay
-//     document.getElementById('display-date').innerHTML = formTglDisplay
-//     // document.getElementById('display-gender').innerHTML = formGenderDisplay
-//     document.getElementById('display-pesan').innerHTML = formPesanDisplay
-// })
+menuIcon.addEventListener("click", () => {
+    menuList.classList.toggle("hidden")
+})
 
 const nmInput = document.getElementById('iname');
 const emInput = document.getElementById('iemail');
